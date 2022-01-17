@@ -2,11 +2,198 @@
     --brand-color: #013755;
 }
 
-.navbar {
-    background-color: var(--brand-color);
+.navbar-customclass {
+    background-color: white;
 }
 
 .btn-primary {
     background-color: var(--brand-color);
     border-color: var(--brand-color);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+#titleHome{
+    font-family: 'Sacramento', cursive;
+    font-size: 64px;
+    font-weight: 400;
+    color: inherit;
+}
+
+.navbar-nav .nav-item a, .candle{
+    font-family: 'Source Code Pro', monospace;
+    color: black !important;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-item a:hover{
+    text-decoration: underline;
+}
+
+.line{
+    width: 50px;
+    height: 4px;
+    background-color: black;
+}
+
+.line-white{
+    width: 50px;
+    height: 4px;
+    background-color: white;
+}
+
+.changeTop{
+    margin-top: -35px;
+}
+
+footer, .copyright{
+    background-color: #222222;
+    font-family: 'Source Code Pro', monospace;
+}
+
+footer .align{
+    height: 20rem;
+}
+
+footer div div a{
+    color: white;
+}
+
+footer div div a:hover{
+    color: white;
+}
+
+.signUp button{
+    background-color: #906435;
+    border: none;
+    color: white;
+    border-radius: 0px;
+}
+
+.signUp button:hover{
+    background-color: #a1703d !important;
+    border: none;
+    color: white;
+    border-radius: 0px;
+}
+
+.titleBold{
+    font-weight: bold;
+}
+
+.imgsHome div{
+    width: 185px;
+    height: 10rem;
+}
+
+.imgsHome div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+fieldset{
+    height: 200px;
+}
+
+fieldset legend{
+    font-family: 'Sacramento', cursive;
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.textBox{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+}
+
+.boxTop{
+    background-color: #fae8da;
+    max-height: 30rem;
+}
+
+.boxCenter{
+    background:
+    /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    /* bottom, image */
+    url(https://static.vecteezy.com/ti/vetor-gratis/p1/295398-folha-verde-em-fundo-natural-gr%C3%A1tis-vetor.jpg);
+}
+
+.textFavorite{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 300;
+}
+
+.imgTop{
+    width: 20rem !important;
+    height: 33rem;
+}
+
+.imgTop img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.addMarginhome{
+    margin-top: 7rem;
+}
+
+.titleTwo h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.boxTwo div .card-group .card{
+    width: 65rem;
+    height: 30rem;
+}
+
+.boxTwo div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.buttonCards .card button{
+    background-color: #fde7dc;
+    color: black;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    margin-top: -15px;
+}
+.buttonCards .card button:hover{
+    background-color: #f3dcc7;
+    color: black;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    margin-top: -15px;
+}
+
+.titleCard{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+}
+
+.card-text{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 300;
+}
+
+.bgAboveFooter{
+    display: block;
+    background-color: #fae8da;
+    width: 100%;
+    height: 40rem;
+    margin-top: -380px;
+}
+
+.buttonVisit{
+    margin-top: -300px;
 }

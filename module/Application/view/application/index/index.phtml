@@ -3,66 +3,104 @@
  * @var Laminas\View\Renderer\PhpRenderer $this
  */
 ?>
-<div class="jumbotron">
-    <h1 class="display-4">Bem vindo ao<br>Laminas MVC Skeleton Application</h1>
-
-    <p>
-        Congratulations! You have successfully installed the
-        <a href="https://github.com/laminas/laminas-mvc-skeleton" target="_blank">Laminas MVC Skeleton</a>.
-        This skeleton can serve as a simple starting point for you to begin
-        building your application on Laminas MVC.
-    </p>
-
-    <hr class="my-4">
-
-    <a class="btn btn-primary btn-lg" href="https://github.com/laminas" target="_blank">
-        Check Laminas on GitHub &raquo;
-    </a>
+<div class="container boxTop p-5 d-flex flex-row mt-4 mb-5">
+    <div class="row">
+        <div class="col addMarginhome">
+            <fieldset class="border border-dark px-5 w-100">
+                <legend class="text-center">New</legend>
+            <div class="textBox">
+               <p>SPRING / SUMMER </br> COLLECTION</p>
+               <div class="line" aria-hidden="false"></div>
+            </div>
+            </fieldset>
+            <form class="signUp">
+                <p class="mt-3 textFavorite">Our favorite collection</p>
+                <button class="btn btn-outline-light btn-light w-50 mt-1" type="button">SHOP NOW</button>
+            </form>
+        </div>
+    </div>
+    <div class="col imgTop">
+        <img class="p-4" src="<?= $this->basePath('img/imgTop-home.jpg') ?>" alt="Home page illustration image">
+    </div>
 </div>
-
-<div class="card-deck">
-    <div class="card">
-        <h2 class="card-header">Follow Development</h2>
-        <div class="card-body">
-            <p>
-                Laminas Project is under active development. If you are
-                interested in following the development, you can check
-                <a href="https://getlaminas.org/blog/">Laminas dev blog</a>,
-                and <a href="https://github.com/issues?utf8=%E2%9C%93&amp;q=is:issue+org:laminas">Laminas issue tracker</a>
-                (link requires a GitHub account). This is a great resource
-                for staying up to date with the latest developments!
-            </p>
-
-            <a class="btn btn-primary" href="https://getlaminas.org/" target="_blank">Laminas Project Portal &raquo;</a>
+<div class="mb-5">
+    <div class="row">
+        <div class="col titleTwo mt-5 text-center">
+            <h1>Crafted with care</h1>
         </div>
     </div>
-
-    <div class="card">
-        <h2 class="card-header">Discover Modules</h2>
-        <div class="card-body">
-            <p>
-                Laminas MVC is a modular application.
-                You can find multiple compatible modules on packagist.
-            </p>
-
-            <a class="btn btn-primary" href="https://packagist.org/?tags=module~zf2~zendframework~zend%20framework~zend%20framework%202~zf3~zf~zend~laminas" target="_blank">
-                Explore Laminas Modules &raquo;
-            </a>
+    <div class="row d-flex justify-content-evenly mt-3 boxTwo">
+        <div class="col">
+            <div class="card-group d-flex justify-content-between buttonCards">
+                <div class="card border-0 rounded-0">
+                    <img src="<?= $this->basePath('img/creme-graphic7.jpg') ?>" class="card-img-top" alt="...">
+                    <button class="btn btn-outline-light btn-light w-50 mx-auto border-0 rounded-0" type="button">SHOP CANDLES</button>
+                </div>
+                <div class="card mx-4 border-0">
+                    <img src="<?= $this->basePath('img/creme-graphic8.jpg') ?>" class="card-img-top" alt="...">
+                    <button class="btn btn-outline-light btn-light w-50 mx-auto border-0 rounded-0" type="button">SHOP SETS</button>
+                </div>
+                <div class="card border-0 rounded-0">
+                    <img src="<?= $this->basePath('img/creme-graphic9.jpeg') ?>" class="card-img-top" alt="...">
+                    <button class="btn btn-outline-light btn-light w-50 mx-auto border-0 rounded-0" type="button">SHOP EXTRAS</button>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="card">
-        <h2 class="card-header">Help &amp; Support</h2>
-        <div class="card-body">
-            <p>
-                If you need any help or support while developing with Laminas,
-                you may reach us via <a href="https://laminas.dev/chat">chat</a> or
-                <a href="https://discourse.laminas.dev">forum</a>.
-                We'd love to hear any questions or feedback you may have
-                regarding any release.
-            </p>
-
-            <a class="btn btn-primary" href="https://laminas.dev/chat" target="_blank">Ping us on chat &raquo;</a>
+</div>
+<div class="container boxCenter p-5 d-flex flex-row mt-4 mb-5">
+    <div class="col imgTop">
+        <img class="p-4" src="<?= $this->basePath('img/candle1.jpg') ?>" alt="Home page illustration image">
+    </div>
+    <div class="row">
+        <div class="col addMarginhome text-white">
+            <fieldset class="border border-light px-5 w-100">
+                <legend class="text-center">Team</legend>
+            <div class="textBox">
+               <p>WE'RE JACOB *</br> MADISON</p>
+               <div class="line-white" aria-hidden="false"></div>
+            </div>
+            </fieldset>
+            <form class="signUp">
+                <button class="btn btn-outline-light btn-light w-75 mt-4" type="button">READ OUR STORY</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col titleTwo mt-5 text-center">
+            <h1>From the blog</h1>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <div class="card-group cardEnd d-flex justify-content-between h-100 p-5">
+                    <div class="card border-0 mr-5 bg-transparent">
+                        <img src="<?= $this->basePath('img/spring-projects.jpg') ?>" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title titleCard">OUR FAVORITE SPRING DIY PROJECTS</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores voluptatum nihil neque magni eveniet distinctio expedita voluptatibus debitis dolorem saepe libero non, consequuntur aut tempore accusamus exercitationem dolores perferendis dicta?</p>
+                        </div>
+                    </div>
+                    <div class="card border-0 bg-transparent">
+                        <img src="<?= $this->basePath('img/gift-ideas.jpg') ?>" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title titleCard">GIFT IDEAS FOR SOMEONE SPECIAL</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ipsam labore corrupti sapiente. Repellat doloremque, asperiores saepe laboriosam adipisci sequi minima maxime, qui veniam labore ratione accusamus numquam voluptas quidem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="w-100">
+    <div class="bgAboveFooter" aria-hidden="false"></div>
+</div>
+<div class="container">
+    <div class="row buttonVisit">
+        <div class="col signUp d-flex justify-content-center my-5 d-block">
+            <button class="btn btn-outline-light btn-light w-25 mt-1" type="button">VISIT THE BLOG</button>
         </div>
     </div>
 </div>

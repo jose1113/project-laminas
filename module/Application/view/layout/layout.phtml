@@ -4,7 +4,7 @@
  */
 ?>
 <?= $this->doctype() ?>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="utf-8">
         <?= $this->headTitle('Laminas MVC Skeleton')->setSeparator(' - ')->setAutoEscape(false) ?>
@@ -28,32 +28,103 @@
         <?= $this->headScript() ?>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-customclass">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                    </li>
+                <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">SHOP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <div class="d-flex flex-column">
+                            <div>
+                                <a class="navbar-brand mx-5" id="titleHome" href="<?= $this->url('home'); ?>">Fable</a>
+                            </div>
+                            <div class="changeTop">
+                                <a class="nav-link text-center candle" aria-current="page" href="<?= $this->url('home'); ?>">CANDLE COMPANY</a>
+                                <div class="line mx-auto" aria-hidden="false"></div>
+                            </div>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
         <div class="container">
             <?= $this->content ?>
-            <hr>
             <footer>
-                <p>
+                <div class="container-fluid">
+                    <div class="row imgsHome">
+                        <div>
+                            <img src="<?= $this->basePath('img/creme-graphic1.jpg') ?>" alt="Illustration of a cream pot">
+                        </div>
+                        <div>
+                            <img src="<?= $this->basePath('img/creme-graphic2.jpg') ?>" alt="Illustration of a cream pot">
+                        </div>
+                        <div>
+                            <img src="<?= $this->basePath('img/creme-graphic3.jpg') ?>" alt="Illustration of a cream pot">
+                        </div>
+                        <div>
+                            <img src="<?= $this->basePath('img/creme-graphic4.jpg') ?>" alt="Illustration of a cream pot">
+                        </div>
+                        <div>
+                            <img src="<?= $this->basePath('img/creme-graphic5.jpg') ?>" alt="Illustration of a cream pot">
+                        </div>
+                        <div>
+                            <img src="<?= $this->basePath('img/creme-graphic6.jpg') ?>" alt="Illustration of a cream pot">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center align">
+                    <div class="container text-center p-4 text-white">
+                        <div class="row d-flex justify-content-between titleBold">
+                            <div class="col">SHOP</div>
+                            <div class="col">ABOUT</div>
+                            <div class="col">SOCIAL</div>
+                            <div class="col">GET NEWS - DAILY</div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col d-flex flex-column">
+                                <a href="#">PRODUCTS</a>
+                                <a href="#" class="my-2">STOCKLISTS</a>
+                                <a href="#">WHOLESALE</a>
+                            </div>
+                            <div class="col d-flex flex-column">
+                                <a href="#">OUR STORY</a>
+                                <a href="#" class="my-2">BLOG</a>
+                                <a href="#">CONTACT</a>
+                                <a href="#" class="mt-2">FAQ</a>
+                            </div>
+                            <div class="col d-flex flex-column">
+                                <a href="#">INSTAGRAM</a>
+                                <a href="#" class="my-2">TWITTER</a>
+                                <a href="#">PINTEREST</a>
+                                <a href="#" class="mt-2">FACEBOOK</a>
+                            </div>
+                            <div class="col mt-3">
+                                <form class="d-flex flex-column signUp">
+                                    <input class="form-control me-2" type="email" placeholder="email@email.com" aria-label="Email">
+                                    <button class="btn btn-outline-success w-50 mx-auto mt-3" type="submit">SIGN UP</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <p class="text-white text-center pb-4 mb-0 copyright">
                     &copy; <?= date('Y') ?>
                     My first <a href="https://getlaminas.org/">Laminas Project</a> a Series of LF Projects, LLC.
                 </p>
-            </footer>
+            </div>
         </div>
         <?= $this->inlineScript()
             ->prependFile($this->basePath('js/bootstrap.min.js'))
